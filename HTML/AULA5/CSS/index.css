@@ -1,0 +1,38 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+body{
+    background-color: cornflowerblue;
+}
+
+.caixa_de_apresentacao{
+    text-align: center;
+    padding: 100px;
+
+}
+
+.botao_iniciar{
+    border-radius: 15px;
+    background-color: darkorange;
+}
+/*seletores para eventos*/
+.botao_iniciar:hover{
+    background-color: darkred;
+    color: white;
+    cursor: pointer;
+}
+
+/* seletores combinados ou descendentes 
+div p{
+    color: tomato;
+}
+
+*/
+
+/*seletores 
+div > p{
+    color: blue;
+}
+*/
