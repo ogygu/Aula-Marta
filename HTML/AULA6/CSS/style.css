@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+@font-face {
+    font-family:minhafonte ;
+    src: url(../FONTES/Spaceships.ttf);
+}
+h1{
+    font-family: 'minhafonte', sans-serif;
+    font-size: 100px;
+}

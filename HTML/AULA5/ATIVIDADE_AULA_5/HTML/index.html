@@ -1,44 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header id="main-content">
-        <div class="header-content">
-            <h1>Gustavo de Paula Bonjardim</h1>
-            <address>
-                <p><strong>Idade:</strong> 19 anos</p>
-                <p><strong>Email:</strong> gustavobonjardim06@gmail.com</p>
-                <p><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/gustavobonjardim" target="_blank">LinkedIn</a></p>
-                <p><strong>Rede Social:</strong><a href="https://github.com/ogygu" target="_blank">Github</a></p>
-                <p><strong>Telefone:</strong> (27) 99872-9053</p>
-            </address>
-
-        </div>
-        <img src="../IMG/AvatarMaker.png" alt="foto de perfil">
-
-    </header>
-
-    <article>
-        <h2>Informações Profissionais</h2>
-        <p>Desenvolvedor web com experiência em front-end e back-end, apaixonado por tecnologia, boas práticas de código e soluções escaláveis.</p>
-
-        <h2>Experiência Profissional</h2>
-        <ol>
-            <li>
-                <p><strong>2025 - Atual</strong></p>
-                <p></p>
-                <p></p>
-            </li>
-        </ol>
-
-
-    </article>
-
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculo</title>
+    <link rel="stylesheet" href="../CSS/style.css">
     
-</body>
+  </head>
+  <body>
+    <!-- 
+     Main: Conteúdo principal da página
+     Article: Conteúdo independente (faz sentido sozinho)
+     Section: Agrupa conteúdos relacionados
+    -->
+    <main class="container">
+      <header id="main-header">
+        <!-- 
+          Bloco que agrupa o nome (h1) e as informações de contato (address).
+          Isso permite alinhar em coluna (um abaixo do outro) dentro do flex.
+        -->
+        <div class="info-pessoal">
+          <h1>Gustavo de Paula</h1>
+          <address>
+            <p>Rede Social</p>
+            <p>Idade: 19</p>
+            <p>Email: gustavobonjardim06@gmail.com</p>
+          </address>
+        </div>
+
+        <!-- Imagem separada, alinhada à direita -->
+        <img src="../IMG/AvatarMaker.png" alt="foto-perfil" width="200px" />
+      </header>
+
+      <article>
+        <h2>Informações Profissionais</h2>
+        <ol>
+          <li>
+            <h3 class="titulo">Formações Acadêmicas</h3>
+
+            <section>
+              <p>
+                <strong>2024 - 2025</strong> |
+                <a href="https://serra.ifes.edu.br/" target="_blank"
+                  >Instituto Federal do Espitito Santo (IFES)</a
+                >
+              </p>
+              <p id="subtexto">Técino de Informática</p>
+            </section>
+
+            <section>
+              <p>
+                <strong>2022 - 2024</strong> |
+                <a
+                  href="https://www.linuspauling.com.br/"
+                  target="_blank"
+                  >Centro Educacional Linus Pauling</a
+                >
+              </p>
+              <p id="subtexto">Ensino Médio</p>
+            </section>
+
+            <section>
+              <p>
+                <strong>2024 - 2028</strong> |
+                <a
+                  href="https://ucl.br/?srsltid=AfmBOoplyFtqHt_T-1WM3ZrL-tHXcS0NHTadC8FYqFFFxjFqdDS0Ph9X"
+                  target="_blank"
+                  >Faculdade UCL</a
+                >
+              </p>
+              <p id="subtexto">Ensino Superior</p>
+            </section>
+          </li>
+
+          <li>
+            <h3 class="titulo">Formações Complementares</h3>
+
+            <section>
+              <p><strong>2020 - 2024</strong></p>
+              <p id="subtexto">Inglês</p>
+            </section>
+          </li>
+
+          <li>
+            <h3 class="titulo">Soft Skills</h3>
+
+            <section>
+              <p><a href="#">Trabalho em Equipe</a></p>
+              <p><a href="#">Empatia</a></p>
+            </section>
+          </li>
+        </ol>
+      </article>
+    </main>
+  </body>
 </html>

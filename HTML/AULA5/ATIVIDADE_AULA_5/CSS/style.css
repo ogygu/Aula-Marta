@@ -1,0 +1,144 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  /* Faz com que o tamanho total dos elementos inclua o padding e a borda, evitando alterações indesejadas na largura e altura */
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif; /* Define Arial como fonte padrão */
+  line-height: 1.6; /* Da um espaçamento de 1.6 para cada linha */
+  color: black; /* Define o preto como cor padrão da fonte */
+  background-color: white; /* Define o branco como cor padão de fundo */
+  padding: 20px; /* Define um espaçamento padão de 20 pixels */
+}
+
+.container{
+  max-width: 800px; /* Largura máxima que um elemento pode ter */
+  margin: 0 auto; /* Espaçamento interno de um elemento */
+  background-color: #f9f9f9;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Adiciona uma sobra no elemento */
+  border-radius: 10px; /* Adiciona arredondamento as bordas do elemento */
+}
+
+#main-header{
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* O linear-gradient cria um degrade entre 2 ou mais cores */
+  color: white;
+  padding: 20px;
+  display: flex; /* Define como um elemento HTML será exibido na página. O Flex organiza os elementos em linha ou coluna */
+  align-items: center; /* Controla o alinhamento dos itens no eixo transversal */
+  justify-content: space-between; /* Cria espaço entre o bloco de texto e a imagem */
+  gap: 20px; /* Define o espaçamento entre os itens filhos dentro de um container */
+}
+
+.info-pessoal {
+  display: flex; /* Define um container flex para os elementos internos */
+  flex-direction: column; /* Força o h1 e o address a ficarem em coluna (um abaixo do outro) */
+}
+
+#main-header h1{
+  font-size: 35px; /* Define o tamanho da fonte */
+  margin-bottom: 10px; /* Define o espaçamento externo na parte inferior de um elemento */
+  font-weight: bold; /* Controla o peso/grossura da fonte  */
+}
+
+img{
+  border-radius: 10px; /* Arredonda as bordas da imagem */
+  border: 3px solid rgba(193, 192, 192, 0.3); /* Cria uma borda ao redor com uma cor solida e no rgba cria um aspecto de tranlucides */
+}
+
+address{
+  font-style: normal; 
+}
+
+address p{
+  /* O px (pixes) é usado como unidade de medida para definir o tamnho dos elementos */
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+article{
+  padding: 20px;
+}
+
+article h2{
+  font-size: 20px;
+  color: rgb(77, 77, 77);
+  margin-bottom: 20px;
+  text-align: center; /* Alinha o texto */
+  font-weight: bold;
+}
+
+/* 
+O seletor de filho direto são filhos diretos do <ol> (um nível abaixo). 
+Já o seletor descendente Todos os <li> que são descendentes do <ol>, em qualquer nível 
+(incluindo sublistas aninhadas)  
+*/
+article ol>li{
+  list-style: none; /* Remove o número padrão do <ol> */
+  counter-increment: section; /* Aumenta o contador (1, 2, 3...) para cada item */
+  margin-bottom: 20px; /* Espaço entre os blocos */
+  position: relative; /* Permite posicionar o número (::before) dentro deste bloco */
+  padding: 15px 20px 15px 50px; /* Espaçamento interno: mais à esquerda para o número */
+  background-color: rgb(238, 238, 238); /* Fundo cinza claro no bloco */
+  border-radius: 8px; /* Bordas arredondadas */
+  border-left: 4px solid #4a90e2; /* Linha vertical azul à esquerda (destaque visual) */
+}
+
+article ol>li::before{
+  content: counter(section); /* Exibe o valor do contador (1, 2, 3...) */
+  position: absolute; /* Posiciona em relação ao li (por causa do position: relative) */
+  left: -13px; /* Distância da borda esquerda do <li> */
+  top: -13px; /* Distância do topo do <li> */
+  background: #4a90e2; /* Fundo azul do círculo */
+  color: white; /* Cor do número (branco) */
+  width: 30px; /* Largura do círculo */
+  height: 30px; /* Altura do círculo */
+  border-radius: 50%; /* Transforma em círculo perfeito */
+  display: inline-flex; /* Habilita centralização flexível */
+  align-items: center; /* Centraliza o número verticalmente */
+  justify-content: center; /* Centraliza o número horizontalmente */
+  font-weight: bold; /* Deixa o número em negrito */
+  font-size: 14px; /* Tamanho do número */
+}
+
+section{
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+a{
+  color: rgb(97, 97, 232);
+  text-decoration: dotted; /* Usado para adicionar "decoração" ao texto como sublinhado, riscado, linha acima, além da cor e estilo da linha */
+  border-bottom: 2px dotted; /* Propriedade que adiciona uma linha na parte inferior de um elemento */
+}
+
+a:hover{
+  color: blue;
+  border-bottom-style: solid;
+}
+
+.titulo{
+  font-size: 100%;
+  font-weight: bold;
+  color: rgb(75, 75, 75);
+  margin-bottom: 20px;
+  transition: font-size 0.3s ease; /* Suaviza mudanças de estilo ao longo da animação */
+  cursor: pointer; /* Define o formato do ponteiro do mouse quando ele está sobre um elemento */
+}
+
+.titulo:hover{
+  font-size: 20px;
+  color: black;
+  /*transform: scale(1.05); - Muda a escala do elemento (resolvi tirar por preferir o efeito de font-size) */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); /* Adiciona uma sombra ao texto */
+}
+
+#subtexto{
+  font-style: italic;
+  color: rgb(98, 98, 98);
+  font-size: 15px;
+}
