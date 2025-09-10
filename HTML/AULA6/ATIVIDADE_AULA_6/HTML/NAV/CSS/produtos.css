@@ -11,7 +11,6 @@ body{
     margin: auto;
    
 }
-
 header, footer {
     background-color: #333;
     color: white;
@@ -31,18 +30,11 @@ a {
 }
 
 a:hover {
-    text-decoration: dotted; /* Opcional: sublinha ao passar o mouse */
+    text-decoration: dotted; 
 }
 
 nav {
     background-color: #ffffff; 
-}
-
-#main-image {
-    width: 960px; 
-    height: auto; 
-    display: block; /* Garante que a margem auto funcione se necessário */
-    margin: 20px auto; 
 }
 
 nav ul {
@@ -69,18 +61,32 @@ nav ul li a:hover {
     color: #ffc800;
 }
 
-section p {
-    padding: 20px;
-    line-height: 1.6;
-    
+table{
+    width: 400px;           
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: center;
 }
 
-section ul li a{
-    color: #000000;
-    text-decoration: none;
+table td,
+table th{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+
 }
 
-section ul li a:hover{
-    color: #ffc800;
+table td img{
+    width: 100%;
+    border-radius: 25px;
 }
 
+table tbody tr:hover {
+    background-color: #efeeee;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}

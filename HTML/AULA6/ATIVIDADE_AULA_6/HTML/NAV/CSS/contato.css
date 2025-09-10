@@ -11,7 +11,6 @@ body{
     margin: auto;
    
 }
-
 header, footer {
     background-color: #333;
     color: white;
@@ -31,18 +30,11 @@ a {
 }
 
 a:hover {
-    text-decoration: dotted; /* Opcional: sublinha ao passar o mouse */
+    text-decoration: dotted; 
 }
 
 nav {
     background-color: #ffffff; 
-}
-
-#main-image {
-    width: 960px; 
-    height: auto; 
-    display: block; /* Garante que a margem auto funcione se necessário */
-    margin: 20px auto; 
 }
 
 nav ul {
@@ -69,18 +61,42 @@ nav ul li a:hover {
     color: #ffc800;
 }
 
-section p {
-    padding: 20px;
-    line-height: 1.6;
-    
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;           
+    padding: 12px;         
+    margin: 8px 0;         
+    border: 2px solid #ccc; 
+    border-radius: 5px;   
+    font-size: 16px;
+    box-sizing: border-box; 
 }
 
-section ul li a{
-    color: #000000;
-    text-decoration: none;
+/* Efeito ao focar nos campos */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    background-color: #f9f9f9; 
+    border-color: #ffc400;     
+    outline: none;             
 }
 
-section ul li a:hover{
-    color: #ffc800;
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
+input[type="submit"]:hover {
+    background-color: #ffbf00;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
